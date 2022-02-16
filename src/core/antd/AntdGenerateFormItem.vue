@@ -21,7 +21,48 @@
         :disabled="disabled || element.options.disabled"
       />
     </template>
-
+      <template v-if="element.type === 'phone'">
+      <a-input
+        v-model:value="data"
+        :size="config.size"
+        :style="{ width: element.options.width }"
+        :placeholder="element.options.placeholder"
+        :maxlength="parseInt(element.options.maxlength)"
+        :prefix="element.options.prefix"
+        :suffix="element.options.suffix"
+        :addonBefore="element.options.addonBefore"
+        :addonAfter="element.options.addonAfter"
+        :allowClear="element.options.allowClear"
+        :readonly="element.options.readonly"
+        :disabled="disabled || element.options.disabled"
+      />
+    </template>
+      <template v-if="element.type === 'email'">
+      <a-input
+        v-model:value="data"
+        :size="config.size"
+        :style="{ width: element.options.width }"
+        :placeholder="element.options.placeholder"
+        :maxlength="parseInt(element.options.maxlength)"
+        :prefix="element.options.prefix"
+        :suffix="element.options.suffix"
+        :addonBefore="element.options.addonBefore"
+        :addonAfter="element.options.addonAfter"
+        :allowClear="element.options.allowClear"
+        :readonly="element.options.readonly"
+        :disabled="disabled || element.options.disabled"
+      />
+    </template>
+      <template v-if="element.type === 'amt'">
+          <a-input-number
+              v-model:value="data"
+              :size="config.size"
+              :style="{ width: element.options.width }"
+              :max="element.options.max"
+              :min="element.options.min"
+              :disabled="disabled || element.options.disabled"
+          />
+      </template>
     <template v-if="element.type === 'password'">
       <a-input-password
         v-model:value="data"

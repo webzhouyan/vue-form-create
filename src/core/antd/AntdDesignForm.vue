@@ -202,7 +202,10 @@ export default defineComponent({
         'select',
         'switch',
         'slider',
-        'text'
+        'text',
+        'amt',
+        'email',
+        'phone'
       ]
     },
     advanceFields: {

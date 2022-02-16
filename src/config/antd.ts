@@ -71,7 +71,7 @@ export const basicComponents = [
   },
   {
     label: '金额',
-    type: 'input',
+    type: 'amt',
     options: {
       width: '100%',
       defaultValue: '',
@@ -115,7 +115,7 @@ export const basicComponents = [
   },
   {
     label: '邮箱',
-    type: 'input',
+    type: 'email',
     options: {
       width: '100%',
       defaultValue: '',
@@ -133,7 +133,7 @@ export const basicComponents = [
   },
   {
     label: '手机号',
-    type: 'input',
+    type: 'phone',
     options: {
       width: '100%',
       defaultValue: '',
@@ -143,6 +143,23 @@ export const basicComponents = [
       suffix: '',
       addonBefore: '',
       addonAfter: '',
+      disabled: false,
+      allowClear: false,
+      readonly: false,
+      rules
+    }
+  },
+  {
+    label: '备注说明',
+    type: 'textarea',
+    options: {
+      width: '100%',
+      defaultValue: '',
+      placeholder: '',
+      maxlength: null,
+      rows: 4,
+      autoSize: false,
+      showCount: false,
       disabled: false,
       allowClear: false,
       readonly: false,
