@@ -1,5 +1,5 @@
 <template>
-  <div class="widget-cate">{{ title }}</div>
+  <div class="widget-cate">{{ title }} <span class="subtitle">拖拽下列控件到右侧</span></div>
   <Draggable
     tag="ul"
     item-key="type"

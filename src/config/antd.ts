@@ -52,7 +52,7 @@ export const widgetForm: WidgetForm = {
 
 export const basicComponents = [
   {
-    label: '单行文本',
+    label: '文本',
     type: 'input',
     options: {
       width: '100%',
@@ -70,18 +70,17 @@ export const basicComponents = [
     }
   },
   {
-    label: '密码框',
-    type: 'password',
+    label: '金额',
+    type: 'input',
     options: {
       width: '100%',
       defaultValue: '',
-      placeholder: '',
+      placeholder: '请输入金额',
       maxlength: null,
       prefix: '',
-      suffix: '',
+      suffix: '元',
       addonBefore: '',
       addonAfter: '',
-      visibilityToggle: true,
       disabled: false,
       allowClear: false,
       readonly: false,
@@ -89,121 +88,7 @@ export const basicComponents = [
     }
   },
   {
-    label: '多行文本',
-    type: 'textarea',
-    options: {
-      width: '100%',
-      defaultValue: '',
-      placeholder: '',
-      maxlength: null,
-      rows: 4,
-      autoSize: false,
-      showCount: false,
-      disabled: false,
-      allowClear: false,
-      readonly: false,
-      rules
-    }
-  },
-  {
-    label: '计数器',
-    type: 'number',
-    options: {
-      width: '',
-      defaultValue: 0,
-      min: 0,
-      max: 100,
-      step: 1,
-      readonly: false,
-      disabled: false,
-      rules
-    }
-  },
-  {
-    label: '单选框组',
-    type: 'radio',
-    options: {
-      defaultValue: '',
-      width: '',
-      inline: true,
-      remote: false,
-      showLabel: false,
-      remoteFunc:
-        'https://raw.githubusercontent.com/fuchengwei/vue-form-create/master/mock/mock.json',
-      options: [
-        {
-          value: 'Option 1',
-          label: 'Option 1'
-        },
-        {
-          value: 'Option 2',
-          label: 'Option 2'
-        },
-        {
-          value: 'Option 3',
-          label: 'Option 3'
-        }
-      ],
-      remoteOptions: [],
-      props: {
-        value: 'value',
-        label: 'label'
-      },
-      disabled: false,
-      rules
-    }
-  },
-  {
-    label: '多选框组',
-    type: 'checkbox',
-    options: {
-      defaultValue: [],
-      width: '',
-      inline: true,
-      remote: false,
-      showLabel: false,
-      remoteFunc:
-        'https://raw.githubusercontent.com/fuchengwei/vue-form-create/master/mock/mock.json',
-      options: [
-        {
-          label: 'Option 1',
-          value: 'Option 1'
-        },
-        {
-          label: 'Option 2',
-          value: 'Option 2'
-        },
-        {
-          label: 'Option 3',
-          value: 'Option 3'
-        }
-      ],
-      remoteOptions: [],
-      props: {
-        value: 'value',
-        label: 'label'
-      },
-      disabled: false,
-      rules
-    }
-  },
-  {
-    label: '时间选择器',
-    type: 'time',
-    options: {
-      defaultValue: '',
-      width: '',
-      placeholder: '请选择时间',
-      format: 'HH:mm:ss',
-      valueFormat: 'HH:mm:ss',
-      readonly: false,
-      allowClear: true,
-      disabled: false,
-      rules
-    }
-  },
-  {
-    label: '日期选择器',
+    label: '日期',
     type: 'date',
     options: {
       defaultValue: '',
@@ -217,85 +102,51 @@ export const basicComponents = [
     }
   },
   {
-    label: '评分',
-    type: 'rate',
+    label: '数值',
+    type: 'number',
     options: {
-      defaultValue: null,
-      max: 5,
-      allowClear: true,
-      allowHalf: false,
-      disabled: false,
-      rules
-    }
-  },
-  {
-    label: '下拉选择框',
-    type: 'select',
-    options: {
-      defaultValue: [],
-      width: '200px',
-      mode: null,
-      placeholder: '',
-      remote: false,
-      showLabel: false,
-      showSearch: false,
-      clearable: false,
-      disabled: false,
-      props: {
-        label: 'label',
-        value: 'value'
-      },
-      options: [
-        {
-          label: 'Option 1',
-          value: 'Option 1'
-        },
-        {
-          label: 'Option 2',
-          value: 'Option 2'
-        },
-        {
-          label: 'Option 3',
-          value: 'Option 3'
-        }
-      ],
-      remoteOptions: [],
-      remoteFunc:
-        'https://raw.githubusercontent.com/fuchengwei/vue-form-create/master/mock/mock.json',
-      rules
-    }
-  },
-  {
-    label: '开关',
-    type: 'switch',
-    options: {
-      defaultValue: false,
-      disabled: false,
-      checkedChildren: '',
-      unCheckedChildren: '',
-      rules
-    }
-  },
-  {
-    label: '滑块',
-    type: 'slider',
-    options: {
-      defaultValue: 0,
-      width: '',
-      min: 0,
-      max: 100,
+      defaultValue: '',
+      width: '60%',
       step: 1,
+      readonly: false,
       disabled: false,
-      range: false,
-      reverse: false,
       rules
     }
   },
   {
-    label: '文字',
-    type: 'text',
+    label: '邮箱',
+    type: 'input',
     options: {
-      defaultValue: 'This is a text'
+      width: '100%',
+      defaultValue: '',
+      placeholder: '请输入邮箱',
+      maxlength: null,
+      prefix: '',
+      suffix: '',
+      addonBefore: '',
+      addonAfter: '',
+      disabled: false,
+      allowClear: false,
+      readonly: false,
+      rules
+    }
+  },
+  {
+    label: '手机号',
+    type: 'input',
+    options: {
+      width: '100%',
+      defaultValue: '',
+      placeholder: '请输入手机号',
+      maxlength: null,
+      prefix: '',
+      suffix: '',
+      addonBefore: '',
+      addonAfter: '',
+      disabled: false,
+      allowClear: false,
+      readonly: false,
+      rules
     }
   }
 ]

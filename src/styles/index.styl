@@ -35,13 +35,10 @@ html, body
         left 0
         right 0
   .center-container
-    border-left 1px solid #e0e0e0
-    border-right 1px solid #e0e0e0
     .btn-bar
       height 45px !important
       line-height 45px
       font-size 18px
-      border-bottom 2px solid #e4e7ed
       text-align right
       background-color white
       padding 0 10px
@@ -59,16 +56,26 @@ html, body
     height 100%
     .widget-cate
       padding 8px 12px
-      font-size 13px
+      font-size 16px
+      font-weight: bold
+      .subtitle
+        font-size 12px
+        color #666666
     ul
       position relative
       overflow hidden
       padding 0 10px 10px
       margin 0
+      display flex
+      flex-direction column
+      align-items center
     .form-edit-widget-label
+      background: #FFFFFF;
+      box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.12)
+      border-radius: 4px
       font-size 12px
       display block
-      width 48%
+      width 80%
       line-height 26px
       position relative
       float left
@@ -105,9 +112,12 @@ html, body
     bottom 0
     .widget-form-list
       background #fff
-      border 1px dashed #999
-      min-height calc(100vh - 65px)
+      border: 1px solid #EDEDED;
+      box-sizing: border-box;
+      border-radius: 6px;
+      min-height 650px
       margin 10px
+      padding 10px
       .widget-item-container
         position relative
         .widget-view-action

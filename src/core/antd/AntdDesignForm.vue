@@ -6,19 +6,9 @@
           <a-layout-sider theme="light" :width="250">
             <div class="components">
               <ComponentGroup
-                title="基础字段"
+                title="常用控件"
                 :fields="basicFields"
                 :list="antd.basicComponents"
-              />
-              <ComponentGroup
-                title="高级字段"
-                :fields="advanceFields"
-                :list="antd.advanceComponents"
-              />
-              <ComponentGroup
-                title="布局字段"
-                :fields="layoutFields"
-                :list="antd.layoutComponents"
               />
             </div>
           </a-layout-sider>
